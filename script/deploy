@@ -1,0 +1,9 @@
+#!/bin/bash
+ 
+ssh app@192.168.1.128 <<EOF
+  cd ~/jenkins1
+  git pull
+  npm install --production
+  forever restartall
+  exit
+EOF
