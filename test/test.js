@@ -3,6 +3,6 @@ var app = require('../app.js');
  
 describe('GET /', function() {
 	  it('respond with cloudview', function(done) {
-		      request(app).get('/').expect('3sys admin cloudview', done);
+		      request(app).get('/').expect('sys admin cloudview', done);
 		    });
 });
